@@ -1,32 +1,98 @@
- /* RESET  */
- * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
- }
+/* RESET  */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-  /* REGOLE GENERALI  */
-  /* .container {
-      width: ; 
-      margin: 0 auto;
-  } */
+/* REGOLE GENERALI  */
+:root {
+      --color-primary: #0084FD;
+      --color-primary-light: #B5DDFF;
+      --color-secondary: #9792E4;
+}
 
-   /* HEADER  */
+body {
+      font-family: 'PT Sans', sans-serif;
+}
 
-    /* MAIN  */
+.container {
+max-width: 900px; 
+margin: 0 auto;
+}
 
-     /* FOOTER  */
+.flex {
+      display: flex;
+}
+
+.space-between {
+      justify-content: space-between;
+}
+
+.wrap {
+      flex-wrap: wrap;
+}
+
+/* HEADER  */
+header {
+      background-color: var(--color-primary);
+}
+
+/* MAIN  */
+.card {
+      width: calc((100% / 3) - 1rem);
+      height: 300px;
+      margin: 0.5rem;
+}
+
+.card:first-child {
+      width: calc(((100% / 3) * 2) - 1rem);
+}
+
+.cards {
+      margin: 0 -0.5rem;
+}
+
+/* FOOTER  */
 
 
-      /* DEBUG  */
-            .border {
-                  border: 2px dashed black;
-            }
-      
-            .box {
-                  background-color: aquamarine;
-            }
 
-            .box2 {
-                  background-color: yellow;
-            }
+
+
+/* RESPONSIVE */
+/* From Desktop to Tablet */
+@media screen and (max-width: 768px) {
+      .container {
+            width: 95%;
+            margin: 0 auto;
+      }
+}
+
+/* From Tablet to Mobile */
+@media screen and (max-width: 425px) {
+      .container {
+            width: 95%;
+            margin: 0 auto;
+      }
+
+      .card, .card:first-child {
+            width: 100%;
+      }
+}
+
+/* DEBUG  */
+      .border {
+            border: 2px dashed black;
+      }
+
+      .box {
+            background-color: aquamarine;
+      }
+
+      .box2 {
+            background-color: yellow;
+      }
+
+      .debug {
+            padding: 5px 10px;
+      }
