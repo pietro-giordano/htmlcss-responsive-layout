@@ -175,7 +175,7 @@ nav button {
       padding: 1rem 0 2rem;
 }
 
-#planning .column:first-child p {
+#planning .column p {
       font-size: 0.8rem;
       line-height: 1.3rem;
 }
@@ -191,8 +191,22 @@ nav button {
       width: 80%;
 }
 
-#planning .column:last-child .arrow-down {
+#planning .column:last-child h3 {
+      padding: 1rem;
+}
 
+#planning .column:last-child p {
+      font-style: italic;
+      padding-bottom: 1rem;
+}
+
+#planning .column:last-child .arrow-down {
+      background-color: var(--color-secondary);
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
 }
 
 /* TESTIMONIALS */
@@ -226,6 +240,22 @@ nav button {
             width: 70%;
             margin-top: 2rem;
       }
+
+      #planning .column {
+            width: 100%;
+      }
+
+      #planning .column:first-child {
+            margin-bottom: 1.5rem;
+      }
+
+      #planning .column:first-child img {
+            padding: 1rem;
+      }
+
+      #planning .column:first-child h2 {
+            font-size: 2.5rem;
+      }
 }
 
 /* From Tablet to Mobile */
@@ -242,6 +272,14 @@ nav button {
       #intro .cards .card:first-child div img {
             width: 90%;
             margin: 2rem auto 0;
+      }
+
+      #planning .column {
+            width: 100%;
+      }
+
+      #planning .column:first-child h2 {
+            font-size: 24px;
       }
 }
 
