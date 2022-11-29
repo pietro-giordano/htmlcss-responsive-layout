@@ -10,8 +10,8 @@ box-sizing: border-box;
       --color-primary: #0084FD;
       --color-primary-light: #B5DDFF;
       --color-secondary: #9792E4;
-      --main-space: 1rem;
       --text-color: white;
+      --border-radius: 23px
 }
 
 html {
@@ -25,13 +25,8 @@ body {
 .container {
       max-width: 900px; 
       margin: 0 auto;
-      padding: 0 var(--main-space);
+      padding: 0 1rem;
 }
-
-/* .container2 {
-      max-width: 800px;
-      margin: 0 auto;
-} */
 
 .flex {
       display: flex;
@@ -46,7 +41,7 @@ body {
 }
 
 button {
-      border-radius: 23px;
+      border-radius: var(--border-radius);
       border: none;
 }
 
@@ -94,18 +89,18 @@ nav button {
 /* MAIN  */
 /* INTRO CARDS */
 #intro .cards {
-      margin: 1.5rem -0.5rem;
+      margin: 1.5rem -0.5rem 3rem;
 }
 
 #intro .cards .card {
       width: calc((100% / 3) - 1rem);
       margin: 0.5rem;
       padding: 1.5rem 1.5rem 0;
-      border-radius: 15px;
+      border-radius: var(--border-radius);
       font-weight: 700;
       background-color: var(--color-primary-light);
       text-align: center;
-      line-height: 25px;
+      line-height: 1.6rem;
 }
 
 #intro .cards .card:first-child {
@@ -115,14 +110,11 @@ nav button {
 
 #intro .cards .card:first-child div {
       width: 50%;
-      position: relative;
+      align-items: flex-end;
 } 
 
 #intro .cards .card:first-child div img {
-      width: 200px;
-      position: absolute;
-      bottom: 0;
-      left: 20px;
+      width: 85%;
 }
 
 #intro .cards .card i {
@@ -166,12 +158,41 @@ nav button {
 }
 
 #planning .column {
-      width: 50%;
+      width: 47%;
+      margin-bottom: 3rem;
 }
 
-#planning .column .box {
+#planning .column:first-child img {
       width: 100%;
-      height: 200px;
+      margin: 4rem 0;
+}
+
+#planning .column:first-child {
+      color: var(--text-color);
+}
+
+#planning .column:first-child h2 {
+      padding: 1rem 0 2rem;
+}
+
+#planning .column:first-child p {
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+}
+
+#planning .column:last-child {
+      padding: 2rem;
+      justify-content: center;
+      background-color: var(--text-color);
+      border-radius: var(--border-radius);
+}
+
+#planning .column:last-child img {
+      width: 80%;
+}
+
+#planning .column:last-child .arrow-down {
+
 }
 
 /* TESTIMONIALS */
@@ -202,8 +223,7 @@ nav button {
       }
 
       #intro .cards .card:first-child div img {
-            position: static;
-            display: block;
+            width: 70%;
             margin-top: 2rem;
       }
 }
@@ -220,6 +240,7 @@ nav button {
       }
 
       #intro .cards .card:first-child div img {
+            width: 90%;
             margin: 2rem auto 0;
       }
 }
