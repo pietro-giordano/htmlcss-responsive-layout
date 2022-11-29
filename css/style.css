@@ -95,20 +95,18 @@ nav button {
 
 .intro .cards .card {
       width: calc((100% / 3) - 1rem);
-      height: 300px;
       margin: 0.5rem;
       padding: 1rem 0.8rem 0;
       border-radius: 15px;
       font-weight: 700;
       background-color: var(--color-primary-light);
+      text-align: center;
+      line-height: 25px;
 }
 
 .intro .cards .card:first-child {
       width: calc(((100% / 3) * 2) - 1rem);
-}
-
-.intro .cards .card:not(1) {
-      
+      text-align: left;
 }
 
 .intro .cards .card:first-child div {
@@ -116,7 +114,13 @@ nav button {
 } 
 
 .intro .cards .card:first-child div img {
-      
+      width: 100%;
+}
+
+.intro .cards .card i {
+      color: var(--color-primary);
+      font-size: 60px;
+      padding: 1rem;
 }
 
 .intro .cards .card h3 {
@@ -133,6 +137,12 @@ nav button {
       font-weight: 700;
       color: var(--text-color);
       background-color: var(--color-primary);
+}
+
+.intro .cards .card button i {
+      color: var(--text-color);
+      font-size: 1rem;
+      padding: 0;
 }
 
 /* PLANNING */
@@ -177,6 +187,10 @@ nav button {
       .ul-links {
             display: none;
       }
+
+      .intro .cards .card:first-child div {
+            width: 100%;
+      }
 }
 
 /* From Tablet to Mobile */
@@ -186,7 +200,7 @@ nav button {
             width: 100%;
       }
 
-      .card, .card:first-child {
+      .intro .cards .card, .intro .cards .card:first-child {
             width: 100%;
       }
 }
