@@ -277,7 +277,7 @@ nav button {
 }
 
 #benefits .cards {
-      margin: 0 -0.5rem 3rem;
+      margin: 0 -0.5rem 5rem;
       padding-bottom: 2rem;
 }
 
@@ -316,12 +316,71 @@ nav button {
 }
 
 /* ABOUT US */
+#aboutus {
+      scroll-margin-top: 65px;
+      margin-bottom: 4rem;
+}
 
+#aboutus .column:first-child {
+      width: 70%;
+}
 
+#aboutus .column:last-child {
+      width: 30%;
+      align-items: center;
+      flex-direction: column;
+}
 
+#aboutus .column:first-child h2 {
+      font-size: 3rem;
+      color: var(--color-secondary);
+}
 
+#aboutus .column:first-child p {
+      padding: 1.5rem 0;
+      line-height: 1.8rem;
+}
 
-/* FOOTER  */
+#aboutus .column .photo {
+      position: relative;
+}
+
+#aboutus .column .photo img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+}
+
+#aboutus .column .photo i {
+      color: var(--color-secondary);
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 4rem;
+}
+
+#aboutus .column:last-child .text {
+      color: var(--color-secondary);
+      padding: 0 2rem;
+      font-weight: 700;
+}
+
+#aboutus .column:last-child .text p {
+      padding: 0.7rem 0;
+      line-height: 1.5rem;
+      font-size: 1.2rem;
+}
+
+#aboutus .column:last-child .text button {
+      padding: 8px 16px;
+      font-size: 0.7rem;
+      color: var(--text-color);
+      background-color: var(--color-secondary);
+}
+
+/* GETSTARTED */
+
 
 
 
@@ -367,6 +426,20 @@ nav button {
       #benefits .cards .card {
             width: calc(50% - 1rem);
       }
+
+      #aboutus .container {
+            justify-content: space-around;
+      }
+
+      #aboutus .column:first-child {
+            width: 50%;
+      }
+
+      #aboutus .column:last-child {
+            width: 40%;
+            align-items: center;
+            flex-direction: column;
+      }
 }
 
 /* From Tablet to Mobile */
@@ -408,6 +481,20 @@ nav button {
 
       #benefits .cards .card {
             width: 100%;
+      }
+
+      #aboutus .column:first-child,
+      #aboutus .column:last-child {
+            width: 95%;
+      }
+
+      #aboutus .column:last-child {
+            align-items: flex-start;
+            padding-top: 1.8rem;
+      }
+
+      #aboutus .column:last-child .text {
+            padding: 0;
       }
 }
 
