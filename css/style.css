@@ -40,6 +40,10 @@ body {
       flex-wrap: wrap;
 }
 
+.grow {
+      flex-grow: 1;
+}
+
 button {
       border-radius: var(--border-radius);
       border: none;
@@ -48,6 +52,9 @@ button {
 /* HEADER  */
 header {
       background-color: var(--color-primary);
+      position: sticky;
+      top: 0;
+      z-index: 10;
 }
 
 .side-header {
@@ -149,6 +156,7 @@ nav button {
 /* PLANNING */
 #planning {
       background-color: var(--color-secondary);
+      scroll-margin-top: 65px;
 }
 
 #planning .plan-row {
@@ -210,31 +218,56 @@ nav button {
 }
 
 /* TESTIMONIALS */
+#testimonials {
+      scroll-margin-top: 65px;
+      margin-top: 3rem;
+}
+
+#testimonials .test-title {
+      text-align: center;
+      padding-bottom: 1rem;
+}
+
+#testimonials .test-title h2 {
+      color: var(--color-secondary);
+      font-size: 2.2rem;
+      padding: 1.5rem;
+}
+
 #testimonials .card {
       background-color: var(--color-secondary);
       border-radius: var(--border-radius);
-      padding: 1rem;
+      margin: 1.5rem 0;
 }
 
 #testimonials .card .photo {
-      width: 200px;
-      height: 200px;
+      padding: 1rem 1rem 2rem;
+}
+
+#testimonials .card .photo img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
       border-radius: 50%;
-      background-size: cover;
-      background-position: center center;
 }
 
-#testimonials .card .photo1 {
-      background-image: url('../img/testimonial1.jpg');
+#testimonials .card .quote {
+      color: var(--text-color);
+      align-items: center;
+      padding: 1.2rem;
 }
 
-#testimonials .card .photo2 {
-      background-image: url('../img/testimonial2.jpg');
+#testimonials .card .quote p {
+      line-height: 1.8rem;
+      padding-bottom: 1.3rem;
 }
 
-#testimonials .card .photo3 {
-      background-image: url('../img/testimonial3.jpg');
+/* BENEFITS */
+#benefits {
+      
 }
+
+
 
 /* FOOTER  */
 
@@ -302,6 +335,19 @@ nav button {
 
       #planning .column:first-child h2 {
             font-size: 24px;
+      }
+
+      #testimonials .card {
+            flex-wrap: wrap;
+            justify-content: center;
+      }
+
+      #testimonials .card .photo {
+            padding-bottom: 0;
+      }
+
+      #testimonials .card .quote {
+            text-align: center;
       }
 }
 
