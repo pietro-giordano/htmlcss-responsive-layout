@@ -14,6 +14,10 @@ box-sizing: border-box;
       --text-color: white;
 }
 
+html {
+      scroll-behavior: smooth;
+}
+
 body {
       font-family: 'PT Sans', sans-serif;
 }
@@ -89,14 +93,14 @@ nav button {
 
 /* MAIN  */
 /* INTRO CARDS */
-.intro .cards {
+#intro .cards {
       margin: 1.5rem -0.5rem;
 }
 
-.intro .cards .card {
+#intro .cards .card {
       width: calc((100% / 3) - 1rem);
       margin: 0.5rem;
-      padding: 1rem 0.8rem 0;
+      padding: 1.5rem 1.5rem 0;
       border-radius: 15px;
       font-weight: 700;
       background-color: var(--color-primary-light);
@@ -104,63 +108,68 @@ nav button {
       line-height: 25px;
 }
 
-.intro .cards .card:first-child {
+#intro .cards .card:first-child {
       width: calc(((100% / 3) * 2) - 1rem);
       text-align: left;
 }
 
-.intro .cards .card:first-child div {
+#intro .cards .card:first-child div {
       width: 50%;
+      position: relative;
 } 
 
-.intro .cards .card:first-child div img {
-      width: 100%;
+#intro .cards .card:first-child div img {
+      width: 200px;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
 }
 
-.intro .cards .card i {
+#intro .cards .card i {
       color: var(--color-primary);
       font-size: 60px;
       padding: 1rem;
 }
 
-.intro .cards .card h3 {
+#intro .cards .card h3 {
       color: var(--color-primary);
       padding-bottom: 1rem;
 }
 
-.intro .cards .card p {
-      padding-bottom: 1rem;
+#intro .cards .card p {
+      padding-bottom: 1.5rem;
 }
 
-.intro .cards .card button {
+#intro .cards .card button {
       padding: 10px 40px;
       font-weight: 700;
       color: var(--text-color);
       background-color: var(--color-primary);
+      letter-spacing: 3px;
 }
 
-.intro .cards .card button i {
+#intro .cards .card button i {
       color: var(--text-color);
       font-size: 1rem;
       padding: 0;
 }
 
 /* PLANNING */
-.planning {
+#planning {
       background-color: var(--color-secondary);
 }
 
-.plan-row {
+#planning .plan-row {
       max-width: 768px;
       margin: 0 auto;
       align-items: flex-end;
 }
 
-.planning .column {
+#planning .column {
       width: 50%;
 }
 
-.planning .column .box {
+#planning .column .box {
       width: 100%;
       height: 200px;
 }
@@ -180,28 +189,38 @@ nav button {
 /* From Desktop to Tablet */
 @media screen and (max-width: 768px) {
       
-      .hamburger {
+      .side-header .hamburger {
             display: inline-block;
       }
 
-      .ul-links {
+      .side-header .ul-links {
             display: none;
       }
 
-      .intro .cards .card:first-child div {
+      #intro .cards .card:first-child div {
             width: 100%;
+      }
+
+      #intro .cards .card:first-child div img {
+            position: static;
+            display: block;
+            margin-top: 2rem;
       }
 }
 
 /* From Tablet to Mobile */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
       .container {
             width: 100%;
       }
 
-      .intro .cards .card, .intro .cards .card:first-child {
+      #intro .cards .card, #intro .cards .card:first-child {
             width: 100%;
+      }
+
+      #intro .cards .card:first-child div img {
+            margin: 2rem auto 0;
       }
 }
 
