@@ -210,8 +210,30 @@ nav button {
 }
 
 /* TESTIMONIALS */
-.testimonials .card {
-      height: 100px;
+#testimonials .card {
+      background-color: var(--color-secondary);
+      border-radius: var(--border-radius);
+      padding: 1rem;
+}
+
+#testimonials .card .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center center;
+}
+
+#testimonials .card .photo1 {
+      background-image: url('../img/testimonial1.jpg');
+}
+
+#testimonials .card .photo2 {
+      background-image: url('../img/testimonial2.jpg');
+}
+
+#testimonials .card .photo3 {
+      background-image: url('../img/testimonial3.jpg');
 }
 
 /* FOOTER  */
