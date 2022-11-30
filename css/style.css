@@ -88,6 +88,10 @@ nav button {
       font-size: 1rem;
 }
 
+nav button a {
+      color: black;
+}
+
 .hamburger {
       display: none;
       color: var(--text-color);
@@ -380,11 +384,73 @@ nav button {
 }
 
 /* GETSTARTED */
+#getstarted {
+      background-color: var(--color-secondary);
+}
 
+#getstarted .container {
+      max-width: 550px;
+      text-align: center;
+      padding: 3rem 1rem;
+}
 
+#getstarted .container div:first-child {
+      color: #CFCDF2;
+}
 
+#getstarted .container h2 {
+      color: #FDC15F;
+      font-size: 5rem;
+}
 
+#getstarted .container h3 {
+      color: var(--text-color);
+      font-size: 2.5rem;
+      padding: 1rem;
+}
 
+#getstarted .container p,
+#getstarted .container div:last-child,
+#getstarted .container div:last-child a {
+      color: var(--text-color);
+}
+
+#getstarted .container p {
+      padding: 1rem 0 2rem;
+}
+
+#getstarted .container div:last-child {
+      font-size: 0.8rem;
+}
+
+#getstarted .container button {
+      padding: 15px 50px;
+      font-weight: 700;
+      color: var(--color-secondary);
+      background-color: var(--text-color);
+      letter-spacing: 3px;
+      margin-bottom: 2rem;
+}
+
+/* FOOTER */
+footer {
+background-color: #333333;
+}
+
+footer .container {
+      max-width: 450px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-color);
+}
+
+footer .container p {
+      padding: 1.5rem 1rem;
+}
+
+footer .container a {
+      color: var(--color-secondary);
+}
 
 /* RESPONSIVE */
 /* From Desktop to Tablet */
